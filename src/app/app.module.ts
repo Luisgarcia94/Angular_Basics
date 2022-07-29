@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ContadorModule } from './contador/contador.module';
 import { HeroesModule } from './heroes/heroes.module';
+import { SaintseiyaModule } from './saintseiya/saintseiya.module';
+import { SaintSeiyaService } from './saintseiya/services/saintseiya.services';
 @NgModule({
   declarations: [
     AppComponent,
@@ -11,7 +13,8 @@ import { HeroesModule } from './heroes/heroes.module';
   imports: [
     BrowserModule,
     HeroesModule,
-    ContadorModule
+    ContadorModule,
+    SaintseiyaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
