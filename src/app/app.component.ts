@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Validators } from '@angular/forms';
+import { __values } from 'tslib';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bases';
+
 }

@@ -1,0 +1,15 @@
+<p>Listado de Héroes</p>
+
+<ul>
+    <li *ngFor="let heroe of heroes">
+        {{heroe}}
+    </li>
+</ul>
+<button (click)="borrarHeroe()">Borrar Héroe</button>
+<div *ngIf="heroeBorrado!=''; else noBorrado"> <!--noBorrado es una referencia, para referenciarla debemos ocupar el signo de hashtag-->
+<h1>Héroe Borrado : <small>{{heroeBorrado}}</small></h1>
+</div>
+
+<ng-template #noBorrado>
+    <h3>No ha borrado nada</h3>
+</ng-template>
